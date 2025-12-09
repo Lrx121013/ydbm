@@ -1,142 +1,621 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2025元旦晚宴报名</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow-x: hidden;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      padding: 20px;
-    }
-
-    .glass-card {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 40px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .glass-card::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-      transform: rotate(30deg);
-      z-index: -1;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
-      background: linear-gradient(90deg, #ffde59, #ff7e5f);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #e0e0e0;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 40px;
-      background: linear-gradient(90deg, #ff7e5f, #ffde59);
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 4px 20px rgba(255, 126, 95, 0.4);
-    }
-
-    .btn:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(255, 126, 95, 0.6);
-    }
-
-    .decoration {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .snow {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: white;
-      border-radius: 50%;
-      animation: fall linear infinite;
-    }
-
-    @keyframes fall {
-      0% {
-        transform: translateY(-100px) translateX(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(100vh) translateX(50px);
-        opacity: 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七年级六班元旦表演报名入口</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 560px;
+            width: 100%;
+            background-color: white;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header {
+            margin-bottom: 35px;
+        }
+        
+        h1 {
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        
+        .class-info {
+            display: inline-block;
+            color: #3b82f6;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 50px;
+            background-color: #eff6ff;
+            margin-top: 8px;
+        }
+        
+        .content {
+            margin: 30px 0;
+        }
+        
+        .text-content {
+            font-size: 1.08rem;
+            line-height: 1.7;
+            color: #475569;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .text-content p {
+            margin-bottom: 18px;
+        }
+        
+        .instructions {
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .instructions h3 {
+            color: #1e293b;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+        
+        .instructions ul {
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+            color: #475569;
+        }
+        
+        .button-container {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        /* 提供的动态箭头按钮样式 */
+        .animated-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 16px 36px;
+            border: 4px solid;
+            border-color: transparent;
+            font-size: 16px;
+            background-color: #f1f5f9;
+            border-radius: 100px;
+            font-weight: 600;
+            color: #1e293b;
+            box-shadow: 0 0 0 2px #ffffff;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .animated-button svg {
+            position: absolute;
+            width: 24px;
+            fill: #3b82f6;
+            z-index: 9;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .animated-button .arr-1 {
+            right: 16px;
+        }
+        
+        .animated-button .arr-2 {
+            left: -25%;
+        }
+        
+        .animated-button .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: #dbeafe;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .animated-button .text {
+            position: relative;
+            z-index: 1;
+            transform: translateX(-12px);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .animated-button:hover {
+            box-shadow: 0 0 0 12px transparent;
+            color: #1e293b;
+            border-radius: 12px;
+            background-color: #e2e8f0;
+        }
+        
+        .animated-button:hover .arr-1 {
+            right: -25%;
+        }
+        
+        .animated-button:hover .arr-2 {
+            left: 16px;
+        }
+        
+        .animated-button:hover .text {
+            transform: translateX(12px);
+        }
+        
+        .animated-button:hover svg {
+            fill: #3b82f6;
+        }
+        
+        .animated-button:active {
+            scale: 0.95;
+            box-shadow: 0 0 0 4px #3b82f6;
+        }
+        
+        .animated-button:hover .circle {
+            width: 220px;
+            height: 220px;
+            opacity: 1;
+        }
+        
+        /* 激活状态 */
+        .animated-button.active {
+            background-color: #3b82f6;
+            color: white;
+            box-shadow: 0 0 0 12px transparent;
+            border-radius: 12px;
+        }
+        
+        .animated-button.active .arr-1 {
+            right: -25%;
+        }
+        
+        .animated-button.active .arr-2 {
+            left: 16px;
+        }
+        
+        .animated-button.active .text {
+            transform: translateX(12px);
+        }
+        
+        .animated-button.active svg {
+            fill: white;
+        }
+        
+        .animated-button.active .circle {
+            width: 220px;
+            height: 220px;
+            opacity: 1;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* 跳转倒计时指示器 */
+        .countdown-indicator {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(59, 130, 246, 0.2);
+            border-radius: 0 0 12px 12px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .animated-button.active .countdown-indicator {
+            opacity: 1;
+        }
+        
+        .countdown-progress {
+            width: 0%;
+            height: 100%;
+            background-color: #3b82f6;
+            border-radius: 0 0 12px 12px;
+            transition: width 1s linear;
+        }
+        
+        .animated-button.active .countdown-progress {
+            width: 100%;
+        }
+        
+        .url-display {
+            background-color: #f1f5f9;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+            font-size: 0.95rem;
+            color: #475569;
+            margin: 25px auto;
+            max-width: 500px;
+            border: 1px solid #e2e8f0;
+            word-break: break-all;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #f1f5f9;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* 返回顶部按钮样式 */
+        .back-to-top-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(20, 20, 20);
+            border: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+            cursor: pointer;
+            transition-duration: 0.3s;
+            overflow: hidden;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top-button.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .svgIcon {
+            width: 12px;
+            transition-duration: 0.3s;
+        }
+        
+        .svgIcon path {
+            fill: white;
+        }
+        
+        .back-to-top-button:hover {
+            width: 140px;
+            border-radius: 50px;
+            transition-duration: 0.3s;
+            background-color: rgb(181, 160, 255);
+            align-items: center;
+        }
+        
+        .back-to-top-button:hover .svgIcon {
+            transition-duration: 0.3s;
+            transform: translateY(-200%);
+        }
+        
+        .back-to-top-button::before {
+            position: absolute;
+            bottom: -20px;
+            content: "返回顶部";
+            color: white;
+            font-size: 0px;
+        }
+        
+        .back-to-top-button:hover::before {
+            font-size: 13px;
+            opacity: 1;
+            bottom: unset;
+            transition-duration: 0.3s;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 30px;
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            .subtitle {
+                font-size: 1.05rem;
+            }
+            
+            .animated-button {
+                padding: 14px 32px;
+                font-size: 15px;
+            }
+            
+            .back-to-top-button {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+            
+            .back-to-top-button:hover {
+                width: 120px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 35px 25px;
+            }
+            
+            h1 {
+                font-size: 1.7rem;
+            }
+            
+            .text-content {
+                font-size: 1rem;
+            }
+            
+            .url-display {
+                font-size: 0.9rem;
+                padding: 12px 16px;
+            }
+            
+            .animated-button {
+                padding: 12px 28px;
+                font-size: 14px;
+            }
+            
+            .back-to-top-button {
+                bottom: 15px;
+                right: 15px;
+                width: 40px;
+                height: 40px;
+            }
+            
+            .back-to-top-button:hover {
+                width: 100px;
+            }
+            
+            .back-to-top-button::before {
+                content: "顶部";
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="glass-card">
-      <h1>2025元旦晚宴</h1>
-      <p>诚邀您参加这场辞旧迎新的盛宴，共度美好时光</p>
-      <a href="https://www.wjx.top/vm/wlw5PMb.aspx" class="btn">立即报名</a>
+    <div class="container">
+        <div class="header">
+            <h1>元旦表演报名</h1>
+            <p class="subtitle">七年级六班 · 文艺汇演</p>
+            <div class="class-info">展示才艺，欢庆元旦</div>
+        </div>
+        
+        <div class="content">
+            <div class="text-content">
+                <p>元旦将至，为丰富校园文化生活，展示同学们的艺术才华，七年级六班将举办元旦文艺汇演。现面向全班同学征集表演节目。</p>
+                <p>无论你是擅长唱歌跳舞，还是喜欢乐器朗诵，或是想尝试小品魔术，我们都欢迎你的参与。让我们共同创造一个难忘的元旦夜晚！</p>
+            </div>
+            
+            <div class="instructions">
+                <h3>报名信息</h3>
+                <ul>
+                    <li>报名截止：12月25日</li>
+                    <li>节目形式：不限（个人或团体均可）</li>
+                    <li>表演时长：建议3-5分钟</li>
+                    <li>报名方式：点击下方按钮进入报名页面</li>
+                </ul>
+            </div>
+            
+            <div class="url-display">ydjmbm.lrx.dpdns.org</div>
+            
+            <div class="button-container">
+                <button class="animated-button" id="redirectButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                        <path
+                          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                        ></path>
+                    </svg>
+                    <span class="text">进入报名</span>
+                    <span class="circle"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                        <path
+                          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                        ></path>
+                    </svg>
+                    <div class="countdown-indicator">
+                        <div class="countdown-progress"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>七年级六班元旦文艺汇演组委会</p>
+            <p>如有疑问，请联系班级文艺委员</p>
+        </div>
     </div>
-  </div>
+    
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top-button" id="backToTopButton">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+        </svg>
+    </button>
 
-  <div class="decoration">
-    <div class="snow" style="animation-delay: 0s; left: 10%;"></div>
-    <div class="snow" style="animation-delay: 1s; left: 20%;"></div>
-    <div class="snow" style="animation-delay: 2s; left: 30%;"></div>
-    <div class="snow" style="animation-delay: 3s; left: 40%;"></div>
-    <div class="snow" style="animation-delay: 4s; left: 50%;"></div>
-    <div class="snow" style="animation-delay: 5s; left: 60%;"></div>
-    <div class="snow" style="animation-delay: 6s; left: 70%;"></div>
-    <div class="snow" style="animation-delay: 7s; left: 80%;"></div>
-    <div class="snow" style="animation-delay: 8s; left: 90%;"></div>
-  </div>
+    <script>
+        // 报名按钮逻辑
+        const button = document.getElementById('redirectButton');
+        const countdownProgress = document.querySelector('.countdown-progress');
+        let isActive = false;
+        let timer = null;
+        
+        button.addEventListener('click', function() {
+            if (!isActive) {
+                // 激活状态
+                this.classList.add('active');
+                isActive = true;
+                
+                // 更新按钮文字
+                const buttonText = this.querySelector('.text');
+                buttonText.textContent = "跳转中...";
+                
+                // 开始倒计时进度条动画
+                countdownProgress.style.transition = 'width 1s linear';
+                countdownProgress.style.width = '100%';
+                
+                // 1秒后跳转
+                timer = setTimeout(() => {
+                    window.location.href = 'http://ydjmbm.lrx.dpdns.org';
+                }, 1000);
+            } else {
+                // 取消激活状态
+                this.classList.remove('active');
+                isActive = false;
+                
+                // 恢复按钮文字
+                const buttonText = this.querySelector('.text');
+                buttonText.textContent = "进入报名";
+                
+                // 重置倒计时进度条
+                countdownProgress.style.transition = 'none';
+                countdownProgress.style.width = '0%';
+                
+                // 清除跳转定时器
+                if (timer) {
+                    clearTimeout(timer);
+                    timer = null;
+                }
+            }
+        });
+        
+        // 点击页面其他地方取消激活状态
+        document.addEventListener('click', function(event) {
+            // 如果按钮是激活状态，且点击的不是按钮本身
+            if (isActive && !button.contains(event.target)) {
+                button.classList.remove('active');
+                isActive = false;
+                
+                // 恢复按钮文字
+                const buttonText = button.querySelector('.text');
+                buttonText.textContent = "进入报名";
+                
+                // 重置倒计时进度条
+                countdownProgress.style.transition = 'none';
+                countdownProgress.style.width = '0%';
+                
+                // 清除跳转定时器
+                if (timer) {
+                    clearTimeout(timer);
+                    timer = null;
+                }
+            }
+        });
+        
+        // 添加键盘支持
+        document.addEventListener('keydown', function(event) {
+            // 按ESC键取消激活状态
+            if (event.key === 'Escape' && isActive) {
+                button.click();
+            }
+            
+            // 按空格键或回车键触发按钮点击
+            if ((event.key === ' ' || event.key === 'Enter') && !isActive) {
+                event.preventDefault();
+                button.click();
+            }
+        });
+        
+        // 鼠标悬停效果
+        button.addEventListener('mouseenter', function() {
+            if (!isActive) {
+                this.style.transform = 'translateY(-2px)';
+            }
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            if (!isActive) {
+                this.style.transform = 'translateY(0)';
+            }
+        });
+        
+        // 返回顶部按钮逻辑
+        const backToTopButton = document.getElementById('backToTopButton');
+        
+        // 监听滚动事件，显示/隐藏返回顶部按钮
+        window.addEventListener('scroll', function() {
+            // 获取滚动位置
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // 如果滚动超过200px，显示按钮，否则隐藏
+            if (scrollTop > 200) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        // 返回顶部按钮点击事件
+        backToTopButton.addEventListener('click', function() {
+            // 平滑滚动到顶部
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            
+            // 添加点击反馈
+            this.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 200);
+        });
+        
+        // 页面加载完成后检查是否应该显示返回顶部按钮
+        window.addEventListener('load', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > 200) {
+                backToTopButton.classList.add('show');
+            }
+        });
+    </script>
 </body>
 </html>
